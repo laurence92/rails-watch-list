@@ -1,0 +1,7 @@
+<%# Add a dropdown association docs, make sure the tables are linked properly %>
+<%= simple_form_for([@list, @bookmark]) do |f| %>
+  <%= f.association :movie %>
+  <%= f.input :comment %>
+  <%= f.submit %>
+<% end %>
+  

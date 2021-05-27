@@ -1,0 +1,6 @@
+<h1>MOVIES INDEX</h1>
+<%   @movies.each do |movie|%>
+<ul>
+<h3><%= link_to movie.title, movie_path(movie) %></h3>
+</ul>
+<% end %>
